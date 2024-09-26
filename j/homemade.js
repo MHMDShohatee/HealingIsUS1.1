@@ -62,14 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 newSrc = '/images/cdimg5.jpg';
                 price = '$59.00';
                 break;
-            case 'buyall':
-                // Show all images when "BUY ALL" is selected
-                allImages.forEach(img => img.style.display = 'block');
-                
-                // Highlight all thumbnails
-                thumbnails.forEach(img => img.classList.add('active'));
-                
+            case 'buyall':           
                 // Set price for "Buy All"
+                newSrc = '/images/buyallcd.jpg'
                 price = '$229.00';
                 break;
             default:
@@ -77,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Update the main image src
-        if (selectedValue !== 'buyall') {
+        if (selectedValue !== null) {
             document.querySelector('.mainimg img').src = newSrc;
             
             // Hide all images except the selected one
@@ -95,6 +90,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (selectedThumbnail) {
                 selectedThumbnail.classList.add('active');
             }
+        }
+
+        if(selectedValue=='buyall'){
+            // Highlight all thumbnails
+            thumbnails.forEach(img => img.classList.add('active'));
         }
     });
 });

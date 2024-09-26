@@ -91,7 +91,6 @@
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     border: none;
-    margin: 5px;
     justify-content: center;
 }
 
@@ -186,4 +185,23 @@
 
 .imgthumb.active{
     border-color: #00bbf0;
+}
+
+.slctdvd{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.slctbox{
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    outline: none;
+}
+
+.slctbox:focus{
+    outline: 2px solid rgb(92, 231, 224);
+    outline-offset: 2px;
 }
