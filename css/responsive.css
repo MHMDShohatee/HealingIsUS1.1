@@ -46,12 +46,17 @@
     margin-bottom: 45px;
   }
 
+  .store-title{
+    font-size:1.4em;
+  }
+
+  .store-description{
+    font-size: 0.9em;
+  }
+
 }
 
 @media (max-width: 600px) {
-  *{
-    display: none;
-  }
 
 }
 
@@ -91,7 +96,7 @@
   *{
     box-sizing: border-box;
     margin: 0;
-    padding: 15px;
+    padding: 0px;
   }
   .slider_section .detail-box h1 {
     font-size: 2rem;
@@ -128,5 +133,13 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
+  }
+}
+
+@media (max-width:770px) {
+  .storeboxdesign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

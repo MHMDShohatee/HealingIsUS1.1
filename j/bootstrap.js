@@ -1753,8 +1753,8 @@
         $(this._element).on(Event$4.CLICK, function (event) {
           event.preventDefault();
           event.stopPropagation();
-
           _this.toggle();
+          console.log();
         });
       };
 
