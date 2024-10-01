@@ -784,6 +784,7 @@ a:focus {
   background-color: #00204a;
   color: #ffffff;
   padding: 45px 0 15px 0;
+  margin-top: auto;
 }
 
 .info_section h4 {
@@ -922,6 +923,7 @@ a:focus {
   position: relative;
   background-color: #ffffff;
   text-align: center;
+  margin-top: auto;
 }
 
 .footer_section p {

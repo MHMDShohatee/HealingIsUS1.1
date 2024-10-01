@@ -115,6 +115,20 @@
     position: absolute;
 }
 
+.abtstyle{
+    background-color: white; 
+    color: black;
+    font-size: calc( 1rem + 0.5vw + 0.5vh);
+}
+
+.fancys h2{
+
+}
+
+.fancys h3{
+
+}
+
 .store-btn:hover{
     background-color: rgba(223, 145, 0, 0.808);
     color:white
